@@ -41,3 +41,11 @@ encrypted_message = encrypted_file.readline()
 encrypted_file.close()
 
 # Write code below
+
+solution = ''
+
+for char in encrypted_message:
+    for x in cipher:
+        if char == cipher[x]: solution += x
+
+print(solution)
